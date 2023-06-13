@@ -1,8 +1,11 @@
 import 'whatwg-fetch';
 
-export default () => {
+function autocomplete() {
+  // BEGIN (write your solution here)
 
-  // BEGIN
+  const author = 'your name';
+  const created = '2022-08-01';
+
   const inputElements = Array.from(document.querySelectorAll('input[data-autocomplete]'));
 
   inputElements.forEach((input) => {
@@ -36,4 +39,11 @@ export default () => {
   });
 
   // END
-};
+
+  /* comment
+   * Author: ${author}
+   * Created: ${created}
+   */
+}
+
+export default autocomplete;

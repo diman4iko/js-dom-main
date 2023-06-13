@@ -1,7 +1,10 @@
 import escapeHtml from 'escape-html';
 
-// BEGIN
-export default () => {
+function sendFeedback() {
+  // BEGIN (write your solution here)
+
+  const author = 'your name';
+  const created = '2022-08-01';
 
   const form = document.querySelector('form');
 
@@ -35,6 +38,13 @@ export default () => {
 
     form.replaceWith(feedbackContainer);
   });
-};
 
-// END
+  // END
+
+  /* comment
+   * Author: ${author}
+   * Created: ${created}
+   */ 
+}
+
+export default sendFeedback;
